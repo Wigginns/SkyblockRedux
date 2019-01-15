@@ -25,13 +25,13 @@ namespace SkyblockRedux
         public override void Load()
         {
             //Add Items we want to be able to extractinate to ExtractinatorMode Set
-            ItemID.Sets.ExtractinatorMode[ItemID.Granite] = ItemID.Granite;
+            ItemID.Sets.ExtractinatorMode[ItemID.Obsidian] = ItemID.Obsidian;
         }
 
         public override void Unload()
         {
             //Revert additions to Extractinator mode in Load()
-            ItemID.Sets.ExtractinatorMode[ItemID.GraniteBlock] = 0;
+            ItemID.Sets.ExtractinatorMode[ItemID.Obsidian] = 0;
         }
 
     }
